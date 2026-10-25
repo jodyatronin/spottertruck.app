@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tested Adapters — Spotter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="site"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="dial" aria-hidden="true">
+  <path d="M 18 72 A 38 38 0 1 1 82 72" fill="none" stroke="#3a434b" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 18 72 A 38 38 0 0 1 60 15" fill="none" stroke="#fab035" stroke-width="9" stroke-linecap="round"/>
+  <line x1="50" y1="52" x2="68" y2="24" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="50" cy="52" r="7" fill="#fff"/>
+</svg><a href="index.html">Spotter</a></header>
+<nav>
+  <a href="index.html" >Home</a>
+  <a href="adapters.html" class="here">Adapters</a>
+  <a href="support.html" >Support</a>
+  <a href="privacy.html" >Privacy</a>
+</nav>
+<h1>Tested Adapters</h1>
+<p class="lead">Spotter needs an adapter that handles header switching and multi-frame
+replies reliably at speed. These are the ones we've verified on a real Land Cruiser 250.</p>
+<table>
+<tr><th>Adapter</th><th>Status</th><th>Notes</th></tr>
+<tr><td><strong>OBDLink CX</strong></td><td class="amber">Verified</td>
+<td>The development reference. Bluetooth LE, STN2310. Requires one-time pairing on first
+connect — accept the iOS pairing prompt.</td></tr>
+<tr><td>OBDLink MX+</td><td>Expected to work</td>
+<td>Same STN family as the CX; not yet verified on this vehicle.</td></tr>
+<tr><td>Generic BLE "ELM327 v1.5" clones</td><td>Not recommended</td>
+<td>Many drop multi-frame replies or mangle fast polling. Spotter runs a capability check on
+connect and will tell you if your adapter fails it, rather than failing silently.</td></tr>
+<tr><td>Any Wi-Fi adapter</td><td>Unsupported</td>
+<td>Joining an adapter's Wi-Fi network breaks wireless CarPlay. By design, never supported.</td></tr>
+</table>
+<p>Tested an adapter we haven't? <a href="mailto:support@spottertruck.app">Tell us</a> —
+model, firmware string if the app shows one, and what worked or didn't.</p>
+<footer>
+<p>Spotter is an independent product of Ronin Software. Not affiliated with, endorsed by, or
+sponsored by Toyota Motor Corporation. "Toyota" and "Land Cruiser" are used descriptively to
+identify compatible vehicles. Spotter reports vehicle data; it does not diagnose, certify, or
+provide repair advice.</p>
+</footer>
+</main>
+</body>
+</html>

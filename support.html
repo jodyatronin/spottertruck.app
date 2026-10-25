@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Spotter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="site"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="dial" aria-hidden="true">
+  <path d="M 18 72 A 38 38 0 1 1 82 72" fill="none" stroke="#3a434b" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 18 72 A 38 38 0 0 1 60 15" fill="none" stroke="#fab035" stroke-width="9" stroke-linecap="round"/>
+  <line x1="50" y1="52" x2="68" y2="24" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="50" cy="52" r="7" fill="#fff"/>
+</svg><a href="index.html">Spotter</a></header>
+<nav>
+  <a href="index.html" >Home</a>
+  <a href="adapters.html" >Adapters</a>
+  <a href="support.html" class="here">Support</a>
+  <a href="privacy.html" >Privacy</a>
+</nav>
+<h1>Support</h1>
+<p class="lead">Email <a href="mailto:support@spottertruck.app">support@spottertruck.app</a>
+— include your adapter model and iPhone model if it's a connection problem.</p>
+<h2>The adapter won't connect</h2>
+<ul>
+<li><strong>Something else is holding the adapter.</strong> A Bluetooth OBD adapter talks to
+one phone at a time. If another phone or another OBD app is connected (or was, and is still
+running in the background), Spotter can't see the adapter. Close other OBD apps, or toggle
+Bluetooth off and on.</li>
+<li><strong>Ignition on.</strong> Many adapters sleep until the vehicle wakes the port.</li>
+<li><strong>Check the adapter.</strong> See the <a href="adapters.html">tested adapters</a>
+list — many inexpensive clones can't handle what Spotter needs and fail in ways that look
+like app bugs.</li>
+</ul>
+<h2>Wi-Fi adapters</h2>
+<p>Spotter supports Bluetooth LE adapters only. Wi-Fi OBD adapters require joining the
+adapter's network, which disconnects wireless CarPlay — the opposite of what a driving
+companion should do.</p>
+<h2>A value shows "—" or a section says Not Reporting</h2>
+<p>The app shows exactly which signals aren't answering and why. Occasional one-off blips at
+startup are normal and heal on their own. A signal that never reports usually means the
+adapter dropped that request — see the adapter list.</p>
+<h2>TestFlight</h2>
+<p>Beta builds are distributed through TestFlight ahead of App Store releases. Interested
+Land Cruiser 250 owners can email the address above.</p>
+<footer>
+<p>Spotter is an independent product of Ronin Software. Not affiliated with, endorsed by, or
+sponsored by Toyota Motor Corporation. "Toyota" and "Land Cruiser" are used descriptively to
+identify compatible vehicles. Spotter reports vehicle data; it does not diagnose, certify, or
+provide repair advice.</p>
+</footer>
+</main>
+</body>
+</html>
