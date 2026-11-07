@@ -55,3 +55,15 @@ th { color: var(--text); }
   .hero { gap: 20px; }
   .hero-shot { width: 220px; margin: 0 auto; }
 }
+
+.badge-link { display: inline-block; }
+.badge { width: 168px; height: auto; }
+
+/* Showcase row: screenshot + copy, image leading, mirrors the hero. */
+.showcase {
+  display: flex; gap: 32px; align-items: center; flex-wrap: wrap; margin: 36px 0;
+}
+.showcase .hero-copy h2 { margin-top: 0; }
+@media (max-width: 560px) {
+  .showcase .hero-shot { width: 220px; margin: 0 auto; }
+}
