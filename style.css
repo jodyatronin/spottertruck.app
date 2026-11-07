@@ -42,3 +42,16 @@ th { color: var(--text); }
   padding: 12px 22px; border-radius: 12px;
 }
 .cta:hover { filter: brightness(1.07); }
+
+/* Hero: copy beside a phone screenshot on wide screens, stacked on narrow. */
+.hero { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.hero-copy { flex: 1 1 300px; }
+.hero-shot {
+  flex: 0 0 auto; width: 280px; max-width: 100%; height: auto;
+  border-radius: 28px; border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+}
+@media (max-width: 560px) {
+  .hero { gap: 20px; }
+  .hero-shot { width: 220px; margin: 0 auto; }
+}
